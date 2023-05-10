@@ -16,12 +16,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   </head>
   <body class="page__body page__body--with-menu">
-    <header class="page__section header" id="home">
+    <header class="header" id="home">
       <div class="container">
         <div class="header__content">
-          <div>
-            <a href="#home" class="icon icon__logo"></a>
-            <a href="#menu" class="icon icon__menu">
+          <div class="logo">
+            <a
+              href="#home"
+              class="logo__position
+              logo__img"
+            ></a>
+            <a
+              href="#menu"
+              class="logo__position
+              logo__menu"
+            >
               <img src="./images/icons/menu.svg" alt="menu">
             </a>
           </div>
@@ -49,94 +57,95 @@
               </li>
             </ul>
           </nav>
-          <a href="#contact" class="icon__hire-us">
+          <button class="button__hire-us" id="contact">
             Hire us
-          </a>
-        </div>
-
-        <h1 class="header__title">
-          Strategic Agency
-        </h1>
-
-        <p class="header__description">
-          We believe in the power of bold ideas that can solve business challenges.
-        </p>
-
-        <a href="#" class="button button--indent">
-          Learn more
-        </a>
-      </div>
-
-      <div class="header__slider slider">
-        <div class="slider__box">
-          <div class="slider__line">
-            <img
-              src="./images/sliders/Photo1.jpg"
-              alt="Photo1"
-              class="slider__image"
-            >
-            <!-- <img src="./images/sliders/Photo2.jpg" alt="Photo2" class="slider__image">
-            <img src="./images/sliders/Photo3.jpg" alt="Photo3" class="slider__image"> -->
-          </div>
-          <div class="slider__menu">
-            <div class="slider__buttons">
-              <button class="slider__buttons--prev"></button>
-              <button class="slider__buttons--next"></button>
-            </div>
-            <div class="slider__text">
-              <h3 class="slider__title">
-                Intro
-              </h3>
-              <p class="slider__description">
-                By the same illusion which lifts the horizon.
-              </p>
-            </div>
-          </div>
+          </button>
         </div>
       </div>
+      <nav class="page__menu menu" id="menu">
+        <div class="container">
+          <div class="menu__action">
+            <div>
+              <a href="#home" class="logo__position logo__img"></a>
+              <a href="#home" class="logo__position logo__close"></a>
+            </div>
+
+            <button class="button__hire-us">
+              Hire us
+            </button>
+          </div>
+
+          <nav class="nav--menu">
+            <ul class="nav__list nav__list--menu">
+              <li>
+                <a class="nav__link nav__link--menu" href="#about">
+                  About us
+                </a>
+              </li>
+
+              <li>
+                <a class="nav__link nav__link--menu" href="#service">
+                  Services
+                </a>
+              </li>
+
+              <li>
+                <a class="nav__link nav__link--menu" href="#testimonials">
+                  Testimonials
+                </a>
+              </li>
+
+              <li>
+                <a class="nav__link nav__link--menu" href="#contact">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
     </header>
-    <nav class="page__menu menu" id="menu">
-      <div class="container">
-        <div class="menu__action">
-          <div>
-            <a href="#home" class="icon icon__logo"></a>
-            <a href="#home" class="icon icon__close"></a>
-          </div>
 
-          <a href="#contact" class="icon__hire-us">
-            Hire us
+    <section class="page__section strategic">
+      <div class="container">
+        <div class="strategic__content">
+          <h1 class="strategic__title">
+            Strategic Agency
+          </h1>
+
+          <p class="strategic__desc">
+            We believe in the power of bold ideas that can solve business challenges.
+          </p>
+
+          <a href="#" class="strategic__button button">
+            Learn more
           </a>
         </div>
-
-        <nav class="nav--menu">
-          <ul class="nav__list nav__list--menu">
-            <li>
-              <a class="nav__link nav__link--menu" href="#about">
-                About us
-              </a>
-            </li>
-
-            <li>
-              <a class="nav__link nav__link--menu" href="#service">
-                Services
-              </a>
-            </li>
-
-            <li>
-              <a class="nav__link nav__link--menu" href="#testimonials">
-                Testimonials
-              </a>
-            </li>
-
-            <li>
-              <a class="nav__link nav__link--menu" href="#contact">
-                Contact Us
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="slider">
+          <div class="slider__box">
+            <div class="slider__line">
+              <img src="./images/sliders/Photo1.jpg" alt="Photo1" class="slider__image">
+              <!-- <img src="./images/sliders/Photo2.jpg" alt="Photo2" class="slider__image">
+                    <img src="./images/sliders/Photo3.jpg" alt="Photo3" class="slider__image"> -->
+            </div>
+            <div class="slider__menu">
+              <div class="slider__buttons">
+                <button class="slider__buttons--prev"></button>
+                <button class="slider__buttons--next"></button>
+              </div>
+              <div class="slider__text">
+                <h3 class="slider__title">
+                  Intro
+                </h3>
+                <p class="slider__description">
+                  By the same illusion which lifts the horizon.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
+    </section>
     <main>
       <section class="page__section about" id="about">
         <div class="container">
@@ -515,7 +524,7 @@
               <h2 class="contact__title">
                 Contact us
               </h2>
-              <div class="contact__">
+              <div class="contact__us">
                 <h3 class="contact__text">
                   Call us
                 </h3>
